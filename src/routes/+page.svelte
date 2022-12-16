@@ -1,7 +1,15 @@
+<script lang="ts">
+	import Gallery from '$lib/Components/Gallery/gallery.svelte';
 
+	import imagesData from '../lib/data/image_data.json';
 
-<h1>This text needs to replaced with a component showing Airbnb style image grid</h1>
-<p>See <a href="https://www.airbnb.com/rooms/20238974">the link</a> for an example. The ideal component will make use of Flowbite-Svelte and Tailwind CSS</p>
-<p>The grid should be dynamic and interactive and work for multiple screen sizes similiar to the one on Airbnb</p>
-<p>Example images can be found in image_data.json</p>
+	const [{ images }] = imagesData;
+</script>
 
+<Gallery {images} />
+
+<style>
+    :global(body) {
+        background-color: rgb(50, 50, 50);
+    }
+</style>
