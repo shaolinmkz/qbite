@@ -78,10 +78,6 @@
 		cursor: pointer;
 	}
 
-	img {
-		@apply h-full relative;
-	}
-
 	.desktop > .img-card {
 		@apply relative bg-cover;
 	}
