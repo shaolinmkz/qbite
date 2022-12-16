@@ -50,7 +50,7 @@
 
 <div class="desktop">
 	{#each modifiedImageData.slice(0, 5) as { imgurl, className } (imgurl)}
-		<div style={`background-image:url(${imgurl})`} class={`${className} img-card`} />
+		<div style={`background-image:url(${imgurl})`} class={`${className} img-card`} data-testid="img-card" />
 	{/each}
 
 	<Button text="Show all photos" />

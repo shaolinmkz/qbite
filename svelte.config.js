@@ -14,7 +14,14 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		vite: {
+			test: {
+				environment: 'jsdom',
+				globals: true,
+				setupFiles: './setupTests.ts'
+			}
+		}
 	}
 };
 
